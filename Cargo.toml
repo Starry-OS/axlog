@@ -22,9 +22,9 @@ default = []
 [dependencies]
 cfg-if = "1.0"
 log = "0.4"
-spinlock = { path = "../../crates/spinlock" }
-crate_interface = { path = "../../crates/crate_interface" }
+spinlock = { git = "https://github.com/Starry-OS/spinlock.git" }
+crate_interface = { git = "https://github.com/Starry-OS/crate_interface.git" }
 chrono = { version = "0.4", optional = true }
 
 [dev-dependencies]
-axlog = { path = ".", features = ["std"] }
+axlog = { git = "https://github.com/Starry-OS/axlog.git", features = ["std"] }
